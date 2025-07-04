@@ -2,11 +2,16 @@
 
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing app...');
     initializeApp();
 });
 
+
+
 // Initialize application
 function initializeApp() {
+    console.log('Initializing app...');
+    initIconFallbacks();
     initMobileMenu();
     initSmoothScroll();
     initScrollAnimations();
@@ -18,38 +23,56 @@ function initializeApp() {
     initAccessibility();
 }
 
+// Icon fallback system
+function initIconFallbacks() {
+    console.log('Initializing icon fallbacks...');
+    
+    // Check if Iconify is loaded
+    setTimeout(() => {
+        const iconifyElements = document.querySelectorAll('iconify-icon');
+        console.log('Found iconify elements:', iconifyElements.length);
+        
+        iconifyElements.forEach(element => {
+            const icon = element.getAttribute('icon');
+            const fallback = element.nextElementSibling;
+            
+            console.log('Icon element:', icon, 'has content:', element.innerHTML.length > 0);
+            
+            if (fallback && fallback.classList.contains('icon-fallback')) {
+                // If iconify fails, show fallback
+                if (!element.innerHTML || element.innerHTML.trim() === '') {
+                    console.log('Showing fallback for:', icon);
+                    element.style.display = 'none';
+                    fallback.style.display = 'inline-block';
+                }
+            }
+        });
+    }, 1000);
+}
+
 // Mobile Menu Toggle
 function initMobileMenu() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
     
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('active');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
             
             // Toggle icon
-            const icon = mobileMenuBtn.querySelector('iconify-icon');
+            const icon = toggle.querySelector('i');
             if (icon) {
-                icon.setAttribute('icon', 
-                    mobileMenu.classList.contains('active') 
-                        ? 'heroicons:x-mark' 
-                        : 'heroicons:bars-3'
-                );
+                icon.className = menu.classList.contains('hidden') ? 'fas fa-bars text-2xl' : 'fas fa-times text-2xl';
             }
         });
         
-        // Close menu when clicking on links
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
+        // Close menu when clicking links
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
             link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('active');
-                
-                const icon = mobileMenuBtn.querySelector('iconify-icon');
-                if (icon) {
-                    icon.setAttribute('icon', 'heroicons:bars-3');
-                }
+                menu.classList.add('hidden');
+                const icon = toggle.querySelector('i');
+                if (icon) icon.className = 'fas fa-bars text-2xl';
             });
         });
     }

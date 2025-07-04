@@ -182,13 +182,14 @@ nav .text-2xl, nav .text-xl, nav .text-lg, nav .text-base {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.95);
     border-radius: 9999px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 0.75rem 1.5rem;
     align-items: center;
     border: 1px solid #e5e7eb;
     z-index: 50;
+    backdrop-filter: blur(10px);
 }
 .fixed.bottom-6.right-6.flex-row a {
     color: #004ba8;
@@ -199,30 +200,37 @@ nav .text-2xl, nav .text-xl, nav .text-lg, nav .text-base {
     color: #3e78b2;
 }
 
-/* Mobile menu */
-.mobile-menu {
-    transition: all 0.3s ease;
+/* Simple mobile menu */
+#mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
-.mobile-menu.active {
-    display: block;
-}
-
-.mobile-menu-btn {
+/* Mobile login button styling */
+.login-btn-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    gap: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
-.mobile-menu-btn:hover {
-    background: #f8fafc;
-    border-radius: 8px;
+.login-btn-mobile:hover {
+    text-decoration: none;
+}
+
+/* Force mobile menu button visibility */
+@media (max-width: 1023px) {
+    #mobile-menu-toggle {
+        display: block !important;
+    }
 }
 
 /* Hero section */
