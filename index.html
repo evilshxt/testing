@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascender Technologies - Sustainable Solutions for Mining, Energy & Infrastructure</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ucla-blue': '#3e78b2',
+                        'cobalt-blue': '#004ba8',
+                        'outer-space': '#4a525a',
+                        'raisin-black': '#24272b',
+                        'custom-black': '#07070a'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200" role="navigation" aria-label="Main Navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center space-x-3 min-w-0">
+                    <a href="#" class="flex items-center space-x-3 min-w-0">
+                        <img src="Logo.jpeg" alt="Ascender Technologies Logo" class="h-11 w-auto object-contain rounded-md shadow-sm" loading="lazy">
+                        <span class="truncate text-xl md:text-2xl font-bold text-cobalt-blue">ASCENDER <span class="text-outer-space font-light">TECHNOLOGIES</span></span>
+                    </a>
+                </div>
+                <!-- Desktop Navigation + Login -->
+                <div class="hidden lg:flex items-center space-x-8 flex-1 justify-end min-w-0">
+                    <!-- About Mega Dropdown -->
+                    <div class="relative group">
+                        <button class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">About</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#about" class="dropdown-item">Company Overview</a>
+                                <a href="#vision" class="dropdown-item">Vision & Mission</a>
+                                <a href="#leadership" class="dropdown-item">Leadership Team</a>
+                                <a href="#values" class="dropdown-item">Core Values</a>
+                                <a href="#sustainability" class="dropdown-item">Sustainability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Industries Mega Dropdown -->
+                    <div class="relative group">
+                        <button class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">Industries</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#mining" class="dropdown-item">Mining & Minerals</a>
+                                <a href="#energy" class="dropdown-item">Energy & Power</a>
+                                <a href="#infrastructure" class="dropdown-item">Infrastructure & Construction</a>
+                                <a href="#marine" class="dropdown-item">Marine & Water</a>
+                                <a href="#telecom" class="dropdown-item">Telecommunications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solutions Mega Dropdown -->
+                    <div class="relative group">
+                        <button class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">Solutions</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#epc" class="dropdown-item">EPC Turnkey Solutions</a>
+                                <a href="#automation" class="dropdown-item">Automation & Digitalization</a>
+                                <a href="#consulting" class="dropdown-item">Engineering Consulting</a>
+                                <a href="#sustainability" class="dropdown-item">Sustainable Technologies</a>
+                                <a href="#oem" class="dropdown-item">OEM Equipment Supply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Insights Mega Dropdown -->
+                    <div class="relative group">
+                        <button class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">Insights</button>
+                        <div class="dropdown-menu align-right">
+                            <div class="dropdown-content">
+                                <a href="#projects" class="dropdown-item">Project Portfolio</a>
+                                <a href="#news" class="dropdown-item">News & Press</a>
+                                <a href="#blog" class="dropdown-item">Blog & Articles</a>
+                                <a href="#case-studies" class="dropdown-item">Case Studies</a>
+                                <a href="#events" class="dropdown-item">Events & Webinars</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">Contact</a>
+                    <a href="#login" class="login-btn" aria-label="Login">
+                        <iconify-icon icon="mdi:login"></iconify-icon>
+                        Login
+                    </a>
+                </div>
+                <!-- Mobile menu button + Login -->
+                <div class="flex lg:hidden items-center space-x-2">
+                    <a href="#login" class="login-btn" aria-label="Login">
+                        <iconify-icon icon="mdi:login"></iconify-icon>
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="Open navigation menu">
+                        <iconify-icon icon="heroicons:bars-3" class="text-2xl text-outer-space"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden lg:hidden">
+            <div class="px-4 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                <div class="mb-2">
+                    <span class="block text-xs font-semibold text-gray-400 uppercase">About</span>
+                    <a href="#about" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Company Overview</a>
+                    <a href="#vision" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Vision & Mission</a>
+                    <a href="#leadership" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Leadership Team</a>
+                    <a href="#values" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Core Values</a>
+                    <a href="#sustainability" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Sustainability</a>
+                </div>
+                <div class="mb-2">
+                    <span class="block text-xs font-semibold text-gray-400 uppercase">Industries</span>
+                    <a href="#mining" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Mining & Minerals</a>
+                    <a href="#energy" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Energy & Power</a>
+                    <a href="#infrastructure" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Infrastructure & Construction</a>
+                    <a href="#marine" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Marine & Water</a>
+                    <a href="#telecom" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Telecommunications</a>
+                </div>
+                <div class="mb-2">
+                    <span class="block text-xs font-semibold text-gray-400 uppercase">Solutions</span>
+                    <a href="#epc" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">EPC Turnkey Solutions</a>
+                    <a href="#automation" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Automation & Digitalization</a>
+                    <a href="#consulting" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Engineering Consulting</a>
+                    <a href="#sustainability" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Sustainable Technologies</a>
+                    <a href="#oem" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">OEM Equipment Supply</a>
+                </div>
+                <div class="mb-2">
+                    <span class="block text-xs font-semibold text-gray-400 uppercase">Insights</span>
+                    <a href="#projects" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Project Portfolio</a>
+                    <a href="#news" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">News & Press</a>
+                    <a href="#blog" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Blog & Articles</a>
+                    <a href="#case-studies" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Case Studies</a>
+                    <a href="#events" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue">Events & Webinars</a>
+                </div>
+                <a href="#contact" class="block px-3 py-2 text-outer-space hover:text-cobalt-blue font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="hero-bg absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mining Infrastructure" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-custom-black/60"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+            <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Sustainable Solutions for 
+                <span class="text-ucla-blue">Africa's Future</span>
+            </h1>
+            <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                Leading EPC company delivering innovative mining, energy, and infrastructure solutions across West Africa
+            </p>
+            <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                Explore Solutions
+                <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
+            </button>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <iconify-icon icon="heroicons:chevron-down" class="text-white text-3xl"></iconify-icon>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold text-raisin-black mb-6">
+                        Building Africa's 
+                        <span class="text-cobalt-blue">Sustainable Future</span>
+                    </h2>
+                    <p class="text-lg text-outer-space mb-6 leading-relaxed">
+                        <!-- Note: Replace with actual company content from uploaded file -->
+                        Ascender Technologies is a leading West African EPC company specializing in sustainable solutions for mining, energy, and infrastructure development. We combine cutting-edge technology with deep local expertise to deliver projects that drive economic growth while preserving our environment.
+                    </p>
+                    <p class="text-lg text-outer-space mb-8 leading-relaxed">
+                        Our commitment to excellence and sustainability has made us a trusted partner for governments, multinational corporations, and local enterprises across the region.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="stat-item">
+                            <div class="text-3xl font-bold text-cobalt-blue">15+</div>
+                            <div class="text-sm text-outer-space">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="text-3xl font-bold text-cobalt-blue">200+</div>
+                            <div class="text-sm text-outer-space">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="text-3xl font-bold text-cobalt-blue">8</div>
+                            <div class="text-sm text-outer-space">Countries Served</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="African Infrastructure" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Our Vision & Mission</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Driving sustainable development through innovative engineering solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="vision-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <div class="text-cobalt-blue mb-4">
+                            <iconify-icon icon="heroicons:eye" class="text-4xl"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-raisin-black mb-4">Vision</h3>
+                        <p class="text-outer-space leading-relaxed">
+                            <!-- Note: Replace with actual vision from uploaded file -->
+                            To be West Africa's premier EPC company, leading the transformation of the region's mining, energy, and infrastructure sectors through innovative, sustainable, and socially responsible solutions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <div class="text-cobalt-blue mb-4">
+                            <iconify-icon icon="heroicons:rocket-launch" class="text-4xl"></iconify-icon>
+                        </div>
+                        <h3 class="text-2xl font-bold text-raisin-black mb-4">Mission</h3>
+                        <p class="text-outer-space leading-relaxed">
+                            <!-- Note: Replace with actual mission from uploaded file -->
+                            To deliver world-class EPC services that create lasting value for our clients, communities, and the environment, while fostering local capacity building and sustainable development across West Africa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Industries We Serve</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Comprehensive EPC solutions across critical sectors driving West Africa's growth
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-br from-ucla-blue to-cobalt-blue p-8 rounded-lg text-white transform hover:scale-105 transition-all duration-300">
+                        <iconify-icon icon="mdi:pickaxe" class="text-5xl mb-4"></iconify-icon>
+                        <h3 class="text-2xl font-bold mb-4">Mining Solutions</h3>
+                        <p class="mb-6">Comprehensive mining infrastructure, processing plants, and sustainable extraction technologies.</p>
+                        <ul class="text-sm space-y-2 opacity-90">
+                            <li>• Processing Plant Design</li>
+                            <li>• Mining Infrastructure</li>
+                            <li>• Environmental Solutions</li>
+                            <li>• Equipment Supply</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-br from-outer-space to-raisin-black p-8 rounded-lg text-white transform hover:scale-105 transition-all duration-300">
+                        <iconify-icon icon="mdi:lightning-bolt" class="text-5xl mb-4"></iconify-icon>
+                        <h3 class="text-2xl font-bold mb-4">Energy Infrastructure</h3>
+                        <p class="mb-6">Power generation, transmission, and renewable energy solutions for sustainable development.</p>
+                        <ul class="text-sm space-y-2 opacity-90">
+                            <li>• Solar & Wind Power</li>
+                            <li>• Grid Infrastructure</li>
+                            <li>• Power Distribution</li>
+                            <li>• Energy Storage</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gradient-to-br from-ucla-blue to-outer-space p-8 rounded-lg text-white transform hover:scale-105 transition-all duration-300">
+                        <iconify-icon icon="mdi:city" class="text-5xl mb-4"></iconify-icon>
+                        <h3 class="text-2xl font-bold mb-4">Civil Infrastructure</h3>
+                        <p class="mb-6">Roads, bridges, buildings, and urban development projects that connect communities.</p>
+                        <ul class="text-sm space-y-2 opacity-90">
+                            <li>• Transportation Networks</li>
+                            <li>• Commercial Buildings</li>
+                            <li>• Water Infrastructure</li>
+                            <li>• Urban Planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Our Solutions</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    End-to-end EPC services from concept to commissioning
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="EPC Services" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">EPC Services</h3>
+                            <p class="text-outer-space mb-4">Complete engineering, procurement, and construction services for complex industrial projects.</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Engineering Consulting" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">Engineering Consulting</h3>
+                            <p class="text-outer-space mb-4">Expert consulting services for feasibility studies, design optimization, and project management.</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sustainable Technologies" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">Sustainable Technologies</h3>
+                            <p class="text-outer-space mb-4">Innovative green technologies and environmental solutions for sustainable development.</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="solutions.html" class="btn-primary px-8 py-3 rounded-lg font-semibold text-white bg-cobalt-blue hover:bg-ucla-blue transition-all text-lg shadow-md" aria-label="View all solutions">View More Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Featured Projects</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Showcasing our expertise through successful project delivery
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gold Processing Plant" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="text-cobalt-blue text-sm font-semibold mb-2">MINING • GHANA</div>
+                            <h3 class="text-2xl font-bold text-raisin-black mb-3">Tarkwa Gold Processing Plant</h3>
+                            <p class="text-outer-space mb-4">State-of-the-art gold processing facility with sustainable extraction technologies and minimal environmental impact.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-outer-space">Completed: 2023</span>
+                                <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Solar Power Plant" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="text-cobalt-blue text-sm font-semibold mb-2">ENERGY • NIGERIA</div>
+                            <h3 class="text-2xl font-bold text-raisin-black mb-3">Lagos Solar Power Complex</h3>
+                            <p class="text-outer-space mb-4">100MW solar power facility providing clean energy to over 50,000 households in Lagos State.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-outer-space">Completed: 2024</span>
+                                <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="projects.html" class="btn-primary px-8 py-3 rounded-lg font-semibold text-white bg-cobalt-blue hover:bg-ucla-blue transition-all text-lg shadow-md" aria-label="View all projects">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Latest News</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Stay updated with our latest projects and industry insights
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="News" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="text-cobalt-blue text-sm font-semibold mb-2">DECEMBER 15, 2024</div>
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">Ascender Technologies Wins Major Infrastructure Contract</h3>
+                            <p class="text-outer-space mb-4">We're proud to announce our selection for the $50M transportation infrastructure project in Accra...</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sustainable Mining News" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="text-cobalt-blue text-sm font-semibold mb-2">NOVEMBER 28, 2024</div>
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">Sustainable Mining: A New Era for West Africa</h3>
+                            <p class="text-outer-space mb-4">Our CEO discusses the future of sustainable mining practices and environmental responsibility...</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="News" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="text-cobalt-blue text-sm font-semibold mb-2">OCTOBER 12, 2024</div>
+                            <h3 class="text-xl font-bold text-raisin-black mb-3">Partnership with Local Communities Drives Success</h3>
+                            <p class="text-outer-space mb-4">Learn how our community-first approach creates lasting value for all stakeholders...</p>
+                            <a href="#" class="text-cobalt-blue hover:text-ucla-blue font-semibold">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="news.html" class="btn-primary px-8 py-3 rounded-lg font-semibold text-white bg-cobalt-blue hover:bg-ucla-blue transition-all text-lg shadow-md" aria-label="View all news">View More News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Get In Touch</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Ready to discuss your next project? Let's create sustainable solutions together
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold text-raisin-black mb-6">Send us a message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-outer-space mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cobalt-blue focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-outer-space mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cobalt-blue focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-outer-space mb-2">Company</label>
+                                <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cobalt-blue focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-outer-space mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cobalt-blue focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-cobalt-blue hover:bg-ucla-blue text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information & Map -->
+                <div data-aos="fade-left">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-raisin-black mb-6">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <iconify-icon icon="heroicons:map-pin" class="text-cobalt-blue text-2xl mr-4 mt-1"></iconify-icon>
+                                    <div>
+                                        <h4 class="font-semibold text-raisin-black">Head Office</h4>
+                                        <p class="text-outer-space">Tarkwa, Western Region<br>Ghana, West Africa</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <iconify-icon icon="heroicons:phone" class="text-cobalt-blue text-2xl mr-4 mt-1"></iconify-icon>
+                                    <div>
+                                        <h4 class="font-semibold text-raisin-black">Phone</h4>
+                                        <p class="text-outer-space">+233 XX XXX XXXX</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <iconify-icon icon="heroicons:envelope" class="text-cobalt-blue text-2xl mr-4 mt-1"></iconify-icon>
+                                    <div>
+                                        <h4 class="font-semibold text-raisin-black">Email</h4>
+                                        <p class="text-outer-space">info@ascendertechnologies.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="bg-gray-200 rounded-lg overflow-hidden h-64">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6947492087896!2d-1.9794!3d5.2784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTYnNDIuMiJOIDHCsDU4JzQ1LjgiVw!5e0!3m2!1sen!2sgh!4v1642000000000!5m2!1sen!2sgh" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-raisin-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">
+                            ASCENDER
+                            <span class="text-ucla-blue font-light">TECHNOLOGIES</span>
+                        </h3>
+                        <p class="text-gray-300 max-w-md">
+                            Leading West African EPC company delivering sustainable solutions for mining, energy, and infrastructure development across the region.
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">
+                            <iconify-icon icon="mdi:whatsapp" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">
+                            <iconify-icon icon="mdi:instagram" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">
+                            <iconify-icon icon="mdi:twitter" class="text-2xl"></iconify-icon>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">
+                            <iconify-icon icon="mdi:linkedin" class="text-2xl"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-ucla-blue transition-colors">About Us</a></li>
+                        <li><a href="#industries" class="text-gray-300 hover:text-ucla-blue transition-colors">Industries</a></li>
+                        <li><a href="#solutions" class="text-gray-300 hover:text-ucla-blue transition-colors">Solutions</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-ucla-blue transition-colors">Projects</a></li>
+                        <li><a href="#news" class="text-gray-300 hover:text-ucla-blue transition-colors">News</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-ucla-blue transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">EPC Services</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">Mining Solutions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">Energy Infrastructure</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">Civil Engineering</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-ucla-blue transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 Ascender Technologies. All rights reserved. | 
+                    <a href="#" class="hover:text-ucla-blue transition-colors">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-ucla-blue transition-colors">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Floating Horizontal Icon Bar -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-row gap-4 bg-white/90 rounded-full shadow-lg px-5 py-3 items-center border border-gray-200" aria-label="Social Media Links">
+        <a href="#" class="text-cobalt-blue hover:text-ucla-blue transition-colors" aria-label="WhatsApp"><iconify-icon icon="mdi:whatsapp" class="text-2xl"></iconify-icon></a>
+        <a href="#" class="text-cobalt-blue hover:text-ucla-blue transition-colors" aria-label="Instagram"><iconify-icon icon="mdi:instagram" class="text-2xl"></iconify-icon></a>
+        <a href="#" class="text-cobalt-blue hover:text-ucla-blue transition-colors" aria-label="X"><iconify-icon icon="mdi:twitter" class="text-2xl"></iconify-icon></a>
+        <a href="#" class="text-cobalt-blue hover:text-ucla-blue transition-colors" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin" class="text-2xl"></iconify-icon></a>
+    </div>
+</body>
+</html>
