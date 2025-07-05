@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ucla-blue: #3e78b2;
+  --color-cobalt-blue: #004ba8;
+  --color-outer-space: #4a525a;
+  --color-raisin-black: #24272b;
+  --color-custom-black: #07070a;
+  
+  --font-family-inter: Inter, sans-serif;
+}
+
+/* Custom utility classes for backward compatibility */
+.text-ucla-blue { color: #3e78b2; }
+.text-cobalt-blue { color: #004ba8; }
+.text-outer-space { color: #4a525a; }
+.text-raisin-black { color: #24272b; }
+.text-custom-black { color: #07070a; }
+
+.bg-ucla-blue { background-color: #3e78b2; }
+.bg-cobalt-blue { background-color: #004ba8; }
+.bg-outer-space { background-color: #4a525a; }
+.bg-raisin-black { background-color: #24272b; }
+.bg-custom-black { background-color: #07070a; }
+
+.hover\:text-ucla-blue:hover { color: #3e78b2; }
+.hover\:text-cobalt-blue:hover { color: #004ba8; }
+.hover\:bg-ucla-blue:hover { background-color: #3e78b2; }
+.hover\:bg-cobalt-blue:hover { background-color: #004ba8; }
+
+.font-inter { font-family: Inter, sans-serif; }

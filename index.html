@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     
     <!-- Tailwind Config -->
     <script>
@@ -117,7 +117,8 @@
                     </div>
                     <a href="#contact" class="nav-item text-outer-space hover:text-cobalt-blue transition-colors">Contact</a>
                     <a href="#login" class="login-btn" aria-label="Login">
-                        <iconify-icon icon="mdi:login"></iconify-icon>
+                        <iconify-icon icon="mdi:login" class="mr-2"></iconify-icon>
+                        <i class="fas fa-sign-in-alt mr-2 icon-fallback" style="display: none;"></i>
                         Login
                     </a>
                 </div>
@@ -179,29 +180,112 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video Carousel -->
     <section class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Video Carousel Background -->
         <div class="hero-bg absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mining Infrastructure" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-custom-black/60"></div>
+            <div class="video-carousel relative w-full h-full">
+                <!-- Slide 1: EPC Engineering -->
+                <div class="video-slide active absolute inset-0 w-full h-full">
+                    <!-- Make the video auto play in the carousel -->
+                    <video src="https://res.cloudinary.com/dwb1dtct8/video/upload/v1751728065/construction_w5g238.mp4"
+                    ></video>
+                    <div class="absolute inset-0 bg-custom-black/50"></div>
+                </div>
+                
+                <!-- Slide 2: Automation & Digitalization -->
+                <div class="video-slide absolute inset-0 w-full h-full">
+                    <img src="https://res.cloudinary.com/dwb1dtct8/image/upload/v1751728378/carburetor_av2syt.jpg" alt="Automation & Digitalization" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-custom-black/50"></div>
+                </div>
+                
+                <!-- Slide 3: Sustainable Technologies -->
+                <div class="video-slide absolute inset-0 w-full h-full">
+                    <img src="https://res.cloudinary.com/dwb1dtct8/image/upload/v1751728360/truck_fjcgcw.jpg" alt="Sustainable Technologies" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-custom-black/50"></div>
+                </div>
+                
+                <!-- Slide 4: Agriculture & Black Fly Farming -->
+                <div class="video-slide absolute inset-0 w-full h-full">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Agriculture & Black Fly Farming" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-custom-black/50"></div>
+                </div>
+            </div>
         </div>
         
-        <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-            <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                Sustainable Solutions for 
-                <span class="text-ucla-blue">Africa's Future</span>
-            </h1>
-            <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-                Leading EPC company delivering innovative mining, energy, and infrastructure solutions across West Africa
-            </p>
-            <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                Explore Solutions
-                <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
-            </button>
+        <!-- Content Overlay -->
+        <div class="relative z-10 text-center text-white w-full px-4">
+            <!-- Slide 1: EPC Engineering -->
+            <div class="hero-content active opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Engineering Excellence for 
+                    <span class="text-ucla-blue">Africa's Growth</span>
+                </h1>
+                <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                    Complete EPC solutions from concept to commissioning, delivering world-class engineering across mining, energy, and infrastructure
+                </p>
+                <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Explore EPC Services
+                    <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
+                </button>
+            </div>
+            
+            <!-- Slide 2: Automation & Digitalization -->
+            <div class="hero-content opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Smart Automation for 
+                    <span class="text-ucla-blue">Digital Transformation</span>
+                </h1>
+                <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                    Cutting-edge automation and digitalization solutions that optimize operations and drive efficiency across industries
+                </p>
+                <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Discover Automation
+                    <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
+                </button>
+            </div>
+            
+            <!-- Slide 3: Sustainable Technologies -->
+            <div class="hero-content opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Sustainable Technologies for 
+                    <span class="text-ucla-blue">Green Future</span>
+                </h1>
+                <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                    Innovative sustainable technologies including battery age systems and renewable energy solutions for environmental preservation
+                </p>
+                <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Learn Sustainability
+                    <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
+                </button>
+            </div>
+            
+            <!-- Slide 4: Agriculture & Black Fly Farming -->
+            <div class="hero-content opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Agricultural Innovation with 
+                    <span class="text-ucla-blue">Black Fly Farming</span>
+                </h1>
+                <p class="hero-subtitle text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                    Revolutionary black fly farming producing organic feeds through maggots, integrated with battery age systems for sustainable agriculture
+                </p>
+                <button class="cta-button bg-cobalt-blue hover:bg-ucla-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Explore Agriculture
+                    <iconify-icon icon="heroicons:arrow-right" class="ml-2"></iconify-icon>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Carousel Navigation -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 z-20">
+            <button class="carousel-dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="0"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="1"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="2"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="3"></button>
         </div>
         
         <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="absolute bottom-8 right-8 animate-bounce">
             <iconify-icon icon="heroicons:chevron-down" class="text-white text-3xl"></iconify-icon>
         </div>
     </section>
@@ -278,6 +362,170 @@
                             <!-- Note: Replace with actual mission from uploaded file -->
                             To deliver world-class EPC services that create lasting value for our clients, communities, and the environment, while fostering local capacity building and sustainable development across West Africa.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section id="leadership" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-raisin-black mb-4">Our Leadership Team</h2>
+                <p class="text-xl text-outer-space max-w-3xl mx-auto">
+                    Meet the visionary leaders driving sustainable development across West Africa
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CEO -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CEO" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">Kwame Asante</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Chief Executive Officer</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                Over 20 years of experience in mining and infrastructure development. Leading Ascender's mission to transform West Africa's industrial landscape through sustainable solutions.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-btn github-btn" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTO -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CTO" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">Dr. Sarah Mensah</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Chief Technology Officer</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                PhD in Engineering with expertise in sustainable technologies and automation. Driving innovation in green mining and renewable energy solutions.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn whatsapp-btn" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="social-btn twitter-btn" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COO -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="COO" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">Michael Osei</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Chief Operations Officer</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                Expert in project management and operations with 15+ years overseeing large-scale infrastructure projects across West Africa.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn instagram-btn" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CFO -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CFO" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">Ama Addo</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Chief Financial Officer</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                Chartered accountant with extensive experience in project financing and sustainable investment strategies for infrastructure development.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn github-btn" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-btn whatsapp-btn" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Head of Engineering -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Head of Engineering" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">David Kofi</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Head of Engineering</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                Master's in Civil Engineering with specialization in sustainable infrastructure design and innovative construction methodologies.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn twitter-btn" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn instagram-btn" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sustainability Director -->
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sustainability Director" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-xl font-bold text-raisin-black mb-2">Grace Owusu</h3>
+                            <p class="text-cobalt-blue font-semibold mb-3">Sustainability Director</p>
+                            <p class="text-outer-space text-sm leading-relaxed flex-1">
+                                Environmental scientist leading our commitment to sustainable practices, including black fly farming and battery age systems for organic feeds.
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="#" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-btn github-btn" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -644,7 +892,7 @@
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="main.js"></script>
+    <script src="src/js/main.js"></script>
     
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
