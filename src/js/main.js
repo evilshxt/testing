@@ -1,9 +1,12 @@
 // Import Tailwind + AOS CSS
 import "../css/assets.css";
 import "aos/dist/aos.css";
+import "../css/main.css";
 
 // Import JS libraries
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from 'firebase/auth';
+import AOS from 'aos';
+import { gsap } from 'gsap';
 
 import { app } from '../keys/keys.js';
 
@@ -158,6 +161,173 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100
+});
+
+// Hero Carousel Functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.carousel-dot');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    // Hide all slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current slide
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    
+    // Animate hero content with GSAP
+    const currentSlideElement = slides[index];
+    const title = currentSlideElement.querySelector('.hero-title');
+    const subtitle = currentSlideElement.querySelector('.hero-subtitle');
+    const cta = currentSlideElement.querySelector('.hero-cta');
+    
+    gsap.fromTo(title, 
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 0.2 }
+    );
+    
+    gsap.fromTo(subtitle, 
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 0.4 }
+    );
+    
+    gsap.fromTo(cta, 
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, delay: 0.6 }
+    );
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Auto-advance carousel
+setInterval(nextSlide, 5000);
+
+// Dot navigation
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+    });
+});
+
+// Scroll indicator functionality
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+        document.querySelector('#about').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+}
+
+// GSAP Animations for Hero Section
+gsap.fromTo('.hero-title', 
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.8, delay: 0.2 }
+);
+
+gsap.fromTo('.hero-subtitle', 
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.8, delay: 0.4 }
+);
+
+gsap.fromTo('.hero-cta', 
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.8, delay: 0.6 }
+);
+
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobileMenuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+}
+
+// Mobile dropdown toggles
+const dropdowns = [
+    { button: 'aboutMobile', content: 'aboutMobileContent' },
+    { button: 'industriesMobile', content: 'industriesMobileContent' },
+    { button: 'solutionsMobile', content: 'solutionsMobileContent' },
+    { button: 'insightsMobile', content: 'insightsMobileContent' }
+];
+
+dropdowns.forEach(({ button, content }) => {
+    const btn = document.getElementById(button);
+    const cont = document.getElementById(content);
+    if (btn && cont) {
+        const icon = btn.querySelector('i');
+        
+        btn.addEventListener('click', () => {
+            cont.classList.toggle('hidden');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        });
+    }
+});
+
+// Smooth scrolling for contact link
+document.querySelectorAll('a[href="#contact"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Form submission handling
+const contactForm = document.querySelector('#contact form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        // Show loading state
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+        submitButton.disabled = true;
+        
+        // Simulate form submission (replace with actual API call)
+        setTimeout(() => {
+            submitButton.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent!';
+            submitButton.classList.add('bg-green-500');
+            
+            // Reset form
+            this.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                submitButton.classList.remove('bg-green-500');
+            }, 3000);
+        }, 2000);
+    });
+}
+
+// Initialize first slide
+if (slides.length > 0) {
+    showSlide(0);
+}
 
 // Export for other modules if needed
 export { auth, signInWithGoogle, signOutUser };

@@ -1,0 +1,159 @@
+/* Import AOS CSS */
+@import 'aos/dist/aos.css';
+
+/* Custom styles for hero carousel */
+.hero-slide {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Custom color classes */
+.text-custom-black {
+    color: #1a1a1a;
+}
+
+.text-nav-blue {
+    color: #2c5aa0;
+}
+
+.text-cobalt-blue {
+    color: #004ba8;
+}
+
+.text-ucla-blue {
+    color: #3e78b2;
+}
+
+.bg-cobalt-blue {
+    background-color: #004ba8;
+}
+
+.bg-ucla-blue {
+    background-color: #3e78b2;
+}
+
+.border-ucla-blue {
+    border-color: #3e78b2;
+}
+
+.bg-custom-black {
+    background-color: #1a1a1a;
+}
+
+/* Focus ring colors */
+.focus\:ring-ucla-blue:focus {
+    --tw-ring-color: #3e78b2;
+}
+
+/* Hover colors */
+.hover\:text-cobalt-blue:hover {
+    color: #004ba8;
+}
+
+.hover\:bg-ucla-blue:hover {
+    background-color: #3e78b2;
+}
+
+/* Font classes */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Additional custom styles for better UX */
+.hero-slide video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}
+
+.scroll-indicator {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Form focus states */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #3e78b2;
+    box-shadow: 0 0 0 3px rgba(62, 120, 178, 0.1);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Button animations */
+.btn-animate {
+    transition: all 0.3s ease;
+}
+
+.btn-animate:hover {
+    transform: scale(1.05);
+}
+
+/* Loading spinner */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e78b2;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #004ba8;
+} 
