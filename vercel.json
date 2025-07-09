@@ -1,0 +1,36 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "routes": [
+    {
+      "src": "/agriculture",
+      "dest": "/agriculture.html"
+    },
+    {
+      "src": "/mining",
+      "dest": "/mining.html"
+    },
+    {
+      "src": "/energy",
+      "dest": "/energy.html"
+    },
+    {
+      "src": "/infrastructure",
+      "dest": "/infrastructure.html"
+    },
+    {
+      "src": "/marine",
+      "dest": "/marine.html"
+    },
+    {
+      "src": "/telecom",
+      "dest": "/telecom.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+} 

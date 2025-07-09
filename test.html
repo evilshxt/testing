@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Contact Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+        .gradient-border {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            padding: 2px;
+            border-radius: 1rem;
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .profile-glow {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen p-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center text-white mb-12">Creative Contact Cards</h1>
+        
+        <!-- Style 1: Diagonal Split with Floating Elements -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6">Style 1: Diagonal Split Design</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 h-80 group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20"></div>
+                        <div class="absolute top-4 right-4 floating-animation">
+                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-16 h-16 rounded-full object-cover profile-glow">
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-1">John Doe</h3>
+                            <p class="text-blue-100 mb-2">Senior Engineer</p>
+                            <p class="text-sm opacity-90 mb-3">Mining Equipment Specialist</p>
+                            <div class="flex space-x-3">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">💼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-[-100%] transition-transform duration-1000"></div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 h-80 group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20"></div>
+                        <div class="absolute top-4 right-4 floating-animation" style="animation-delay: -2s;">
+                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b4c33c7f?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-16 h-16 rounded-full object-cover profile-glow">
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-1">Sarah Johnson</h3>
+                            <p class="text-emerald-100 mb-2">Project Manager</p>
+                            <p class="text-sm opacity-90 mb-3">Construction Solutions</p>
+                            <div class="flex space-x-3">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">💼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-[-100%] transition-transform duration-1000"></div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 h-80 group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20"></div>
+                        <div class="absolute top-4 right-4 floating-animation" style="animation-delay: -4s;">
+                            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-16 h-16 rounded-full object-cover profile-glow">
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-1">Mike Chen</h3>
+                            <p class="text-orange-100 mb-2">Technical Lead</p>
+                            <p class="text-sm opacity-90 mb-3">Rock Technology Expert</p>
+                            <div class="flex space-x-3">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors cursor-pointer">
+                                    <span class="text-xs">💼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 translate-x-full group-hover:translate-x-[-100%] transition-transform duration-1000"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Style 2: Glassmorphism Cards -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6">Style 2: Glassmorphism Design</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover">
+                    <div class="glass-effect rounded-3xl p-6 border border-white/20 h-80 flex flex-col justify-between">
+                        <div class="text-center">
+                            <div class="gradient-border inline-block rounded-full mb-4">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">David Wilson</h3>
+                            <p class="text-purple-300 mb-2">Operations Manager</p>
+                            <p class="text-sm text-gray-300">15 years in mining operations</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <span class="text-sm">david.wilson@sandvik.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <span class="text-sm">+233 XX XXX XXXX</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📍</span>
+                                </div>
+                                <span class="text-sm">Accra, Ghana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="glass-effect rounded-3xl p-6 border border-white/20 h-80 flex flex-col justify-between">
+                        <div class="text-center">
+                            <div class="gradient-border inline-block rounded-full mb-4">
+                                <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Grace Asante</h3>
+                            <p class="text-purple-300 mb-2">Sales Director</p>
+                            <p class="text-sm text-gray-300">Client relations specialist</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <span class="text-sm">grace.asante@sandvik.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <span class="text-sm">+233 XX XXX XXXX</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📍</span>
+                                </div>
+                                <span class="text-sm">Kumasi, Ghana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="glass-effect rounded-3xl p-6 border border-white/20 h-80 flex flex-col justify-between">
+                        <div class="text-center">
+                            <div class="gradient-border inline-block rounded-full mb-4">
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-full object-cover">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Robert Mensah</h3>
+                            <p class="text-purple-300 mb-2">Service Engineer</p>
+                            <p class="text-sm text-gray-300">Equipment maintenance expert</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📧</span>
+                                </div>
+                                <span class="text-sm">robert.mensah@sandvik.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📱</span>
+                                </div>
+                                <span class="text-sm">+233 XX XXX XXXX</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-xs">📍</span>
+                                </div>
+                                <span class="text-sm">Takoradi, Ghana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Style 3: Side-by-Side Modern Cards -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6">Style 3: Side-by-Side Modern</h2>
+            
+            <!-- Original Style 3 -->
+            <h3 class="text-lg font-medium text-gray-300 mb-4">Variation 1: Classic Side-by-Side</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="card-hover">
+                    <div class="bg-white rounded-2xl p-8 flex items-center space-x-6 shadow-2xl">
+                        <div class="relative">
+                            <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-xl object-cover">
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Alex Thompson</h3>
+                            <p class="text-blue-600 font-medium mb-2">Regional Manager</p>
+                            <p class="text-sm text-gray-600 mb-3">Leading West Africa operations</p>
+                            <div class="flex space-x-2">
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm hover:bg-blue-600 transition-colors">Contact</button>
+                                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="bg-white rounded-2xl p-8 flex items-center space-x-6 shadow-2xl">
+                        <div class="relative">
+                            <div class="w-24 h-24 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1507101105822-7472b28e22ac?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-xl object-cover">
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">James Osei</h3>
+                            <p class="text-emerald-600 font-medium mb-2">Technical Support</p>
+                            <p class="text-sm text-gray-600 mb-3">24/7 customer assistance</p>
+                            <div class="flex space-x-2">
+                                <button class="px-4 py-2 bg-emerald-500 text-white rounded-lg text-sm hover:bg-emerald-600 transition-colors">Contact</button>
+                                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors">Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Variation 2: Dark Theme with Stats -->
+            <h3 class="text-lg font-medium text-gray-300 mb-4">Variation 2: Dark Theme with Stats</h3>
+            
+
+                <div class="card-hover">
+                    <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 flex items-center space-x-6 shadow-2xl">
+                        <div class="relative">
+                            <div class="w-24 h-24 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b4c33c7f?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-20 h-20 rounded-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-8 h-8 bg-green-500 rounded-full border-2 border-gray-900 flex items-center justify-center">
+                                <span class="text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Akosua Frimpong</h3>
+                            <p class="text-rose-400 font-medium mb-2">HR Manager</p>
+                            <p class="text-sm text-gray-400 mb-3">8 years experience • 200+ hires</p>
+                            <div class="flex items-center space-x-4 mb-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-white">4.8</div>
+                                    <div class="text-xs text-gray-400">Rating</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-white">200+</div>
+                                    <div class="text-xs text-gray-400">Hires</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-white">8</div>
+                                    <div class="text-xs text-gray-400">Years</div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="px-4 py-2 bg-rose-500 text-white rounded-lg text-sm hover:bg-rose-600 transition-colors">Message</button>
+                                <button class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg text-sm hover:bg-gray-600 transition-colors">Call</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Variation 3: Compact with Social Links -->
+            <h3 class="text-lg font-medium text-gray-300 mb-4">Variation 3: Compact with Social Links</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 flex items-center space-x-4 shadow-lg border border-blue-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face" 
+                                 alt="Team Member" class="w-14 h-14 rounded-full object-cover">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-800 truncate">Benjamin Addai</h3>
+                            <p class="text-blue-600 font-medium text-sm">IT Specialist</p>
+                            <div class="flex items-center space-x-2 mt-2">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-blue-600 transition-colors">L</div>
+                                <div class="w-6 h-6 bg-gray-400 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-gray-500 transition-colors">@</div>
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-green-600 transition-colors">📱</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-6 flex items-center space-x-4 shadow-lg border border-emerald-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1580518324671-c2ba99fa8136?w=150&h=150&fit=crop&crop=face" 
+                                 alt="Team Member" class="w-14 h-14 rounded-full object-cover">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-800 truncate">Adwoa Sarpong</h3>
+                            <p class="text-emerald-600 font-medium text-sm">Finance Manager</p>
+                            <div class="flex items-center space-x-2 mt-2">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-blue-600 transition-colors">L</div>
+                                <div class="w-6 h-6 bg-gray-400 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-gray-500 transition-colors">@</div>
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-green-600 transition-colors">📱</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 flex items-center space-x-4 shadow-lg border border-purple-100">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                                 alt="Team Member" class="w-14 h-14 rounded-full object-cover">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-lg font-bold text-gray-800 truncate">Kwame Asante</h3>
+                            <p class="text-purple-600 font-medium text-sm">Operations Lead</p>
+                            <div class="flex items-center space-x-2 mt-2">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-blue-600 transition-colors">L</div>
+                                <div class="w-6 h-6 bg-gray-400 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-gray-500 transition-colors">@</div>
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs cursor-pointer hover:bg-green-600 transition-colors">📱</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Style 4: Hexagonal Cards -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6">Style 4: Hexagonal Modern</h2>
+            
+            <!-- Original Style 4 -->
+            <h3 class="text-lg font-medium text-gray-300 mb-4">Variation 1: Rotated Diamond with Floating Circles</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div class="card-hover">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full transform -translate-x-12 translate-y-12"></div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-4 transform rotate-45">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-12 h-12 rounded-lg object-cover transform -rotate-45">
+                            </div>
+                            <h3 class="text-xl font-bold mb-1">Lisa Owusu</h3>
+                            <p class="text-indigo-100 mb-2">Quality Assurance</p>
+                            <p class="text-sm opacity-90 mb-4">Ensuring excellence in every project</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-2">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                    <div class="w-2 h-2 bg-white/50 rounded-full"></div>
+                                    <div class="w-2 h-2 bg-white/30 rounded-full"></div>
+                                </div>
+                                <button class="px-4 py-2 bg-white/20 rounded-full text-sm hover:bg-white/30 transition-colors">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover">
+                    <div class="bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full transform -translate-x-12 translate-y-12"></div>
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-4 transform rotate-45">
+                                <img src="https://images.unsplash.com/photo-1580518324671-c2ba99fa8136?w=150&h=150&fit=crop&crop=face" 
+                                     alt="Team Member" class="w-12 h-12 rounded-lg object-cover transform -rotate-45">
+                            </div>
+                            <h3 class="text-xl font-bold mb-1">Emmanuel Adom</h3>
+                            <p class="text-pink-100 mb-2">Safety Officer</p>
+                            <p class="text-sm opacity-90 mb-4">Workplace safety champion</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-2">
+                                    <div
+
+    </div>
+</body>
+</html>
