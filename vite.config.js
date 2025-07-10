@@ -11,7 +11,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        'vision-mission': 'vision-mission.html'
+        'vision-mission': 'vision-mission.html',
+        mining: 'mining.html'
       },
       output: {
         manualChunks: undefined,
@@ -35,6 +36,15 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['aos', 'gsap', 'firebase/app', 'firebase/auth', 'firebase/firestore']
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        'vision-mission': 'vision-mission.html',
+        mining: 'mining.html'
+      }
+    }
   },
   publicDir: 'public'
 })

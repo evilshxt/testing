@@ -5,6 +5,10 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/mining",
+      "destination": "/mining.html"
+    },
+    {
       "source": "/vision-mission",
       "destination": "/vision-mission.html"
     },

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy & Power - Ascender Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 bg-white z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo and Brand -->
+                <div class="flex items-center space-x-3">
+                    <img src="/assets/Logo.jpeg" alt="Ascender Technologies" class="h-8 w-8 rounded-md">
+                    <div class="flex items-center space-x-1">
+                        <span class="font-orbitron font-bold text-xl text-ucla-blue">Ascender</span>
+                        <span class="font-orbitron font-bold text-xl text-custom-black">Technologies</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            About
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="index.html#about" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-building mr-2 text-ucla-blue"></i>Company Overview
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="vision-mission.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-eye mr-2 text-ucla-blue"></i>Vision & Mission
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="index.html#leadership" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-users mr-2 text-ucla-blue"></i>Leadership Team
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="vision-mission.html#values" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-heart mr-2 text-ucla-blue"></i>Core Values
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="vision-mission.html#sustainability" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-leaf mr-2 text-ucla-blue"></i>Sustainability
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Industries
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-[28rem] bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="mining.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-hammer mr-2 text-ucla-blue"></i>Mining & Minerals
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="energy.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-bolt mr-2 text-ucla-blue"></i>Energy & Power
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="infrastructure.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-road mr-2 text-ucla-blue"></i>Infrastructure & Construction
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="marine.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-water mr-2 text-ucla-blue"></i>Marine & Water
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="telecom.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-wifi mr-2 text-ucla-blue"></i>Telecommunications
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Solutions
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-96 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-cogs mr-2 text-ucla-blue"></i>EPC Turnkey Solutions
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-robot mr-2 text-ucla-blue"></i>Automation & Digitalization
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-tools mr-2 text-ucla-blue"></i>Engineering Consulting
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-recycle mr-2 text-ucla-blue"></i>Sustainable Technologies
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-industry mr-2 text-ucla-blue"></i>OEM Equipment Supply
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="agriculture.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-seedling mr-2 text-ucla-blue"></i>Agriculture & Farming
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insights Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Insights
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#projects" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-folder-open mr-2 text-ucla-blue"></i>Project Portfolio
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-newspaper mr-2 text-ucla-blue"></i>News & Press
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-blog mr-2 text-ucla-blue"></i>Blog & Articles
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#projects" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-chart-line mr-2 text-ucla-blue"></i>Case Studies
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-calendar-alt mr-2 text-ucla-blue"></i>Events & Webinars
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <a href="#contact" class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">Contact</a>
+
+                    <!-- Login/Logout Button -->
+                    <button id="authButton" class="bg-white text-ucla-blue border-2 border-ucla-blue px-4 py-2 rounded-lg hover:bg-ucla-blue hover:text-white transition-all duration-200 font-semibold flex items-center space-x-2">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuButton" class="md:hidden text-nav-blue hover:text-ucla-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden bg-white border-t shadow-lg hidden">
+            <div class="px-4 py-2 space-y-1">
+                <!-- About Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="aboutMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        About
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="aboutMobileContent" class="hidden pb-2">
+                        <a href="index.html#about" class="block px-6 py-2 text-gray-700">Company Overview</a>
+                        <a href="vision-mission.html" class="block px-6 py-2 text-gray-700">Vision & Mission</a>
+                        <a href="index.html#leadership" class="block px-6 py-2 text-gray-700">Leadership Team</a>
+                        <a href="vision-mission.html#values" class="block px-6 py-2 text-gray-700">Core Values</a>
+                        <a href="vision-mission.html#sustainability" class="block px-6 py-2 text-gray-700">Sustainability</a>
+                    </div>
+                </div>
+
+                <!-- Industries Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="industriesMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Industries
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="industriesMobileContent" class="hidden pb-2">
+                        <a href="mining.html" class="block px-6 py-2 text-gray-700">Mining & Minerals</a>
+                        <a href="energy.html" class="block px-6 py-2 text-gray-700">Energy & Power</a>
+                        <a href="infrastructure.html" class="block px-6 py-2 text-gray-700">Infrastructure & Construction</a>
+                        <a href="marine.html" class="block px-6 py-2 text-gray-700">Marine & Water</a>
+                        <a href="telecom.html" class="block px-6 py-2 text-gray-700">Telecommunications</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="solutionsMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Solutions
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="solutionsMobileContent" class="hidden pb-2">
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">EPC Turnkey Solutions</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Automation & Digitalization</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Engineering Consulting</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Sustainable Technologies</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">OEM Equipment Supply</a>
+                        <a href="agriculture.html" class="block px-6 py-2 text-gray-700">Agriculture & Farming</a>
+                    </div>
+                </div>
+
+                <!-- Insights Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="insightsMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Insights
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="insightsMobileContent" class="hidden pb-2">
+                        <a href="#projects" class="block px-6 py-2 text-gray-700">Project Portfolio</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">News & Press</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">Blog & Articles</a>
+                        <a href="#projects" class="block px-6 py-2 text-gray-700">Case Studies</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">Events & Webinars</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="block px-3 py-3 text-nav-blue font-semibold">Contact</a>
+                
+                <!-- Mobile Login Button -->
+                <div class="pt-4 border-t border-gray-200">
+                    <button id="authButtonMobile" class="w-full bg-ucla-blue text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-all duration-200 font-semibold flex items-center justify-center space-x-2">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-600/60"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" id="hero-title">Energy & Power</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Empowering Africa with advanced power generation, grid automation, and sustainable energy solutions. Delivering reliable, efficient, and future-ready energy infrastructure.</p>
+            <button class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                Explore Our Energy Solutions
+            </button>
+        </div>
+    </section>
+    <!-- What We Do in Energy -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold text-blue-800 mb-6">What We Do in Energy</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Power Plant EPC</h3>
+                        <p class="text-gray-700 leading-relaxed">Turnkey engineering, procurement, and construction for thermal, hydro, and renewable power plants. From feasibility to commissioning, we deliver robust energy infrastructure.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Grid Automation</h3>
+                        <p class="text-gray-700 leading-relaxed">Smart grid solutions, SCADA integration, and real-time monitoring for efficient, reliable power distribution and management.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Renewable Integration</h3>
+                        <p class="text-gray-700 leading-relaxed">Solar, wind, and hybrid systems design and deployment. Enabling clean energy transitions for African industries and communities.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Energy Storage & Microgrids</h3>
+                        <p class="text-gray-700 leading-relaxed">Advanced battery storage, microgrid design, and off-grid power solutions for resilience and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Energy automation systems" class="rounded-2xl shadow-xl w-full h-auto">
+            </div>
+        </div>
+    </section>
+    <!-- Our Products & Equipment -->
+    <section class="py-20 px-6 bg-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Our Products & Equipment</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=500&q=80" alt="Gas Turbine" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-700 text-white p-3 rounded-full">
+                            <i class="fas fa-bolt text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-bolt text-blue-700 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Gas Turbine Generators</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-efficiency turbines for large-scale power generation. Remote monitoring and predictive maintenance included.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-tachometer-alt text-blue-700 mr-2"></i>Output: 50-300 MW</li>
+                            <li><i class="fas fa-wifi text-blue-700 mr-2"></i>Remote diagnostics</li>
+                            <li><i class="fas fa-cogs text-blue-700 mr-2"></i>Automated controls</li>
+                            <li><i class="fas fa-leaf text-blue-700 mr-2"></i>Low emissions</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=500&q=80" alt="Solar Inverter" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-white p-3 rounded-full">
+                            <i class="fas fa-solar-panel text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-solar-panel text-yellow-500 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Solar Inverters</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Grid-tied and off-grid inverters for solar PV systems. High conversion efficiency and smart monitoring.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-battery-full text-yellow-500 mr-2"></i>Efficiency: 98.5%</li>
+                            <li><i class="fas fa-network-wired text-yellow-500 mr-2"></i>Smart grid ready</li>
+                            <li><i class="fas fa-mobile-alt text-yellow-500 mr-2"></i>App monitoring</li>
+                            <li><i class="fas fa-shield-alt text-yellow-500 mr-2"></i>Surge protection</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=500&q=80" alt="Switchgear" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-indigo-700 text-white p-3 rounded-full">
+                            <i class="fas fa-plug text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-plug text-indigo-700 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Medium Voltage Switchgear</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Reliable switchgear for safe, efficient power distribution. Modular, scalable, and IoT-enabled.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-bolt text-indigo-700 mr-2"></i>Voltage: 11-33kV</li>
+                            <li><i class="fas fa-expand-arrows-alt text-indigo-700 mr-2"></i>Modular design</li>
+                            <li><i class="fas fa-wifi text-indigo-700 mr-2"></i>IoT monitoring</li>
+                            <li><i class="fas fa-shield-alt text-indigo-700 mr-2"></i>Arc protection</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=500&q=80" alt="Battery Storage" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-700 text-white p-3 rounded-full">
+                            <i class="fas fa-battery-full text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-battery-full text-green-700 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Battery Storage Systems</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Lithium-ion and flow battery solutions for grid and off-grid storage. Scalable, safe, and long-lasting.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-battery-half text-green-700 mr-2"></i>Capacity: 100kWh–10MWh</li>
+                            <li><i class="fas fa-shield-alt text-green-700 mr-2"></i>Safety certified</li>
+                            <li><i class="fas fa-sync-alt text-green-700 mr-2"></i>Fast charge/discharge</li>
+                            <li><i class="fas fa-leaf text-green-700 mr-2"></i>Eco-friendly</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b43?auto=format&fit=crop&w=500&q=80" alt="SCADA System" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-cyan-700 text-white p-3 rounded-full">
+                            <i class="fas fa-network-wired text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-network-wired text-cyan-700 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">SCADA & Automation</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Supervisory control and data acquisition for real-time grid and plant management. Secure, scalable, and cloud-ready.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-server text-cyan-700 mr-2"></i>Cloud integration</li>
+                            <li><i class="fas fa-shield-alt text-cyan-700 mr-2"></i>Cybersecurity</li>
+                            <li><i class="fas fa-chart-line text-cyan-700 mr-2"></i>Real-time analytics</li>
+                            <li><i class="fas fa-cogs text-cyan-700 mr-2"></i>Automated controls</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Hybrid Microgrid" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-900 text-white p-3 rounded-full">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-project-diagram text-blue-900 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Hybrid Microgrid Controllers</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Controllers for integrating solar, wind, diesel, and storage. Seamless, reliable, and smart microgrid management.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-solar-panel text-blue-900 mr-2"></i>Multi-source integration</li>
+                            <li><i class="fas fa-cogs text-blue-900 mr-2"></i>Smart load balancing</li>
+                            <li><i class="fas fa-bolt text-blue-900 mr-2"></i>Blackout protection</li>
+                            <li><i class="fas fa-mobile-alt text-blue-900 mr-2"></i>Remote control</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Workflow & Efficiency -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Our Energy Project Workflow</h2>
+        
+        <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+            <!-- Step 1 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
+                <h3 class="text-xl font-semibold mb-3">Energy Assessment</h3>
+                <p class="text-gray-600">Comprehensive energy audits and feasibility studies to optimize power generation and distribution.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 2 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
+                <h3 class="text-xl font-semibold mb-3">System Design</h3>
+                <p class="text-gray-600">Custom engineering solutions for power plants, grids, and renewable energy integration.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 3 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
+                <h3 class="text-xl font-semibold mb-3">Equipment Installation</h3>
+                <p class="text-gray-600">Strategic deployment of power generation and distribution equipment with minimal disruption.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 4 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">4</div>
+                <h3 class="text-xl font-semibold mb-3">Grid Integration</h3>
+                <p class="text-gray-600">Smart grid implementation and automation systems for enhanced efficiency and reliability.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 5 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">5</div>
+                <h3 class="text-xl font-semibold mb-3">Ongoing Support</h3>
+                <p class="text-gray-600">24/7 monitoring, maintenance, and technical support for optimal power performance.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Impact Stats -->
+    <section class="py-20 px-6 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Energy Impact</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">500+</div>
+                    <p class="text-lg">MW Power Generated</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">25</div>
+                    <p class="text-lg">Power Projects Delivered</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">99.5%</div>
+                    <p class="text-lg">Grid Reliability</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                    <p class="text-lg">Monitoring Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partnering with OEMs -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6" data-aos="fade-up">Built With the World's Best</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Ascender collaborates with global OEMs to supply world-class power generation and distribution equipment for energy projects across Africa. Our partnerships ensure access to cutting-edge technology and comprehensive support.
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center" data-aos="fade-left">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">SIEMENS</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">GE</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">ABB</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">SCHNEIDER</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch CTA Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6" id="cta-title">Ready to Power Africa's Future?</h2>
+            <p class="text-xl text-gray-700 mb-8">
+                Partner with Ascender Technologies to transform your energy infrastructure with advanced power generation, smart grid solutions, and sustainable energy technologies.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                    Contact Our Energy Division
+                </button>
+                <div class="text-gray-600">
+                    <p>Email: energy@ascender.tech</p>
+                    <p>Phone: +233 20 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#24272b] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="/assets/Logo.jpeg" alt="Ascender Technologies Logo" class="h-8 w-auto object-contain rounded-md">
+                        <span class="text-lg font-bold text-blue-600">ASCENDER <span class="text-white font-light">TECHNOLOGIES</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Leading West African EPC company specializing in sustainable solutions for mining, energy, and infrastructure development.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="mining.html" class="hover:text-white transition-colors">Mining & Minerals</a></li>
+                        <li><a href="energy.html" class="hover:text-white transition-colors">Energy & Power</a></li>
+                        <li><a href="infrastructure.html" class="hover:text-white transition-colors">Infrastructure</a></li>
+                        <li><a href="#automation" class="hover:text-white transition-colors">Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#leadership" class="hover:text-white transition-colors">Leadership</a></li>
+                        <li><a href="#careers" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#news" class="hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        © 2024 Ascender Technologies. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-custom-black mb-6">Login to Ascender Technologies</h2>
+                <button id="googleLoginBtn" class="w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-3">
+                    <i class="fab fa-google text-red-500"></i>
+                    <span>Continue with Google</span>
+                </button>
+                <button id="closeModal" class="mt-4 text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="mb-6">
+                    <i class="fas fa-sign-out-alt text-4xl text-ucla-blue mb-4"></i>
+                    <h2 class="text-2xl font-bold text-custom-black mb-2">Confirm Logout</h2>
+                    <p class="text-gray-600">Are you sure you want to logout from your account?</p>
+                </div>
+                <div class="flex space-x-4">
+                    <button id="confirmLogoutBtn" class="flex-1 bg-red-500 text-white py-3 px-4 rounded-lg hover:bg-red-600 transition-colors duration-200 font-semibold">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                    <button id="cancelLogoutBtn" class="flex-1 bg-gray-300 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-400 transition-colors duration-200 font-semibold">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed top-4 right-4 z-50 space-y-2"></div>
+
+    <script type="module" src="src/js/energy.js"></script>
+</body>
+</html> 
