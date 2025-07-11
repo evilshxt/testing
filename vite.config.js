@@ -12,7 +12,12 @@ export default defineConfig({
       input: {
         main: 'index.html',
         'vision-mission': 'vision-mission.html',
-        mining: 'mining.html'
+        mining: 'mining.html',
+        energy: 'energy.html',
+        marine: 'marine.html',
+        telecom: 'telecom.html',
+        infrastructure: 'infrastructure.html',
+        test: 'test.html'
       },
       output: {
         manualChunks: undefined,
@@ -36,15 +41,6 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['aos', 'gsap', 'firebase/app', 'firebase/auth', 'firebase/firestore']
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-        'vision-mission': 'vision-mission.html',
-        mining: 'mining.html'
-      }
-    }
   },
   publicDir: 'public'
 })

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecommunications - Ascender Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 bg-white z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo and Brand -->
+                <div class="flex items-center space-x-3">
+                    <img src="/assets/Logo.jpeg" alt="Ascender Technologies" class="h-8 w-8 rounded-md">
+                    <div class="flex items-center space-x-1">
+                        <span class="font-orbitron font-bold text-xl text-ucla-blue">Ascender</span>
+                        <span class="font-orbitron font-bold text-xl text-custom-black">Technologies</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            About
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="index.html#about" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-building mr-2 text-ucla-blue"></i>Company Overview
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="vision-mission.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-eye mr-2 text-ucla-blue"></i>Vision & Mission
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="index.html#leadership" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-users mr-2 text-ucla-blue"></i>Leadership Team
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="vision-mission.html#values" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-heart mr-2 text-ucla-blue"></i>Core Values
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="vision-mission.html#sustainability" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-leaf mr-2 text-ucla-blue"></i>Sustainability
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Industries
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-[28rem] bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="mining.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-hammer mr-2 text-ucla-blue"></i>Mining & Minerals
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="energy.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-bolt mr-2 text-ucla-blue"></i>Energy & Power
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="infrastructure.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-road mr-2 text-ucla-blue"></i>Infrastructure & Construction
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="marine.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-water mr-2 text-ucla-blue"></i>Marine & Water
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="telecom.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-wifi mr-2 text-ucla-blue"></i>Telecommunications
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Solutions
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-96 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-cogs mr-2 text-ucla-blue"></i>EPC Turnkey Solutions
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-robot mr-2 text-ucla-blue"></i>Automation & Digitalization
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-tools mr-2 text-ucla-blue"></i>Engineering Consulting
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-recycle mr-2 text-ucla-blue"></i>Sustainable Technologies
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#solutions" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-industry mr-2 text-ucla-blue"></i>OEM Equipment Supply
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="agriculture.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-seedling mr-2 text-ucla-blue"></i>Agriculture & Farming
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insights Dropdown -->
+                    <div class="relative group">
+                        <button class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">
+                            Insights
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+                            <div class="p-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#projects" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-folder-open mr-2 text-ucla-blue"></i>Project Portfolio
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-newspaper mr-2 text-ucla-blue"></i>News & Press
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-blog mr-2 text-ucla-blue"></i>Blog & Articles
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-col space-y-3">
+                                        <a href="#projects" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-chart-line mr-2 text-ucla-blue"></i>Case Studies
+                                        </a>
+                                        <hr class="border-gray-200">
+                                        <a href="#news" class="flex items-center px-3 py-2 text-gray-700 hover:text-ucla-blue hover:bg-gray-50 rounded transition-colors duration-200">
+                                            <i class="fas fa-calendar-alt mr-2 text-ucla-blue"></i>Events & Webinars
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <a href="#contact" class="text-nav-blue hover:text-ucla-blue transition-colors duration-200 font-semibold">Contact</a>
+
+                    <!-- Login/Logout Button -->
+                    <button id="authButton" class="bg-white text-ucla-blue border-2 border-ucla-blue px-4 py-2 rounded-lg hover:bg-ucla-blue hover:text-white transition-all duration-200 font-semibold flex items-center space-x-2">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuButton" class="md:hidden text-nav-blue hover:text-ucla-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden bg-white border-t shadow-lg hidden">
+            <div class="px-4 py-2 space-y-1">
+                <!-- About Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="aboutMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        About
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="aboutMobileContent" class="hidden pb-2">
+                        <a href="index.html#about" class="block px-6 py-2 text-gray-700">Company Overview</a>
+                        <a href="vision-mission.html" class="block px-6 py-2 text-gray-700">Vision & Mission</a>
+                        <a href="index.html#leadership" class="block px-6 py-2 text-gray-700">Leadership Team</a>
+                        <a href="vision-mission.html#values" class="block px-6 py-2 text-gray-700">Core Values</a>
+                        <a href="vision-mission.html#sustainability" class="block px-6 py-2 text-gray-700">Sustainability</a>
+                    </div>
+                </div>
+
+                <!-- Industries Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="industriesMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Industries
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="industriesMobileContent" class="hidden pb-2">
+                        <a href="mining.html" class="block px-6 py-2 text-gray-700">Mining & Minerals</a>
+                        <a href="energy.html" class="block px-6 py-2 text-gray-700">Energy & Power</a>
+                        <a href="infrastructure.html" class="block px-6 py-2 text-gray-700">Infrastructure & Construction</a>
+                        <a href="marine.html" class="block px-6 py-2 text-gray-700">Marine & Water</a>
+                        <a href="telecom.html" class="block px-6 py-2 text-gray-700">Telecommunications</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="solutionsMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Solutions
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="solutionsMobileContent" class="hidden pb-2">
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">EPC Turnkey Solutions</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Automation & Digitalization</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Engineering Consulting</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">Sustainable Technologies</a>
+                        <a href="#solutions" class="block px-6 py-2 text-gray-700">OEM Equipment Supply</a>
+                        <a href="agriculture.html" class="block px-6 py-2 text-gray-700">Agriculture & Farming</a>
+                    </div>
+                </div>
+
+                <!-- Insights Mobile -->
+                <div class="border-b border-gray-200">
+                    <button id="insightsMobile" class="w-full text-left px-3 py-3 text-nav-blue font-semibold flex justify-between items-center">
+                        Insights
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="insightsMobileContent" class="hidden pb-2">
+                        <a href="#projects" class="block px-6 py-2 text-gray-700">Project Portfolio</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">News & Press</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">Blog & Articles</a>
+                        <a href="#projects" class="block px-6 py-2 text-gray-700">Case Studies</a>
+                        <a href="#news" class="block px-6 py-2 text-gray-700">Events & Webinars</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="block px-3 py-3 text-nav-blue font-semibold">Contact</a>
+                
+                <!-- Mobile Login Button -->
+                <div class="pt-4 border-t border-gray-200">
+                    <button id="authButtonMobile" class="w-full bg-ucla-blue text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-all duration-200 font-semibold flex items-center justify-center space-x-2">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" id="hero-title">Telecommunications</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">Connecting Africa's future with advanced telecommunications infrastructure, 5G networks, and digital transformation solutions. Planning to expand into this critical industry to bridge the digital divide.</p>
+            <button class="bg-[#3e78b2] hover:bg-[#004ba8] text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                Explore Our Telecom Plans
+            </button>
+        </div>
+    </section>
+    <!-- What We Plan to Do in Telecommunications -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold text-[#004ba8] mb-6">Our Telecommunications Vision</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">5G Network Infrastructure</h3>
+                        <p class="text-gray-700 leading-relaxed">Planning comprehensive 5G network deployment across Africa. From fiber optic networks to wireless infrastructure, we aim to manage complex telecom projects with precision and efficiency.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Digital Transformation Solutions</h3>
+                        <p class="text-gray-700 leading-relaxed">Advanced IoT integration, smart city connectivity, and digital twin technology for modern telecommunications. Our planned solutions include intelligent network management, automated systems, and sustainable connectivity practices.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Rural Connectivity</h3>
+                        <p class="text-gray-700 leading-relaxed">Bridging the digital divide with innovative connectivity solutions for underserved communities. Creating telecommunications infrastructure that's both accessible and economically viable.</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Network Security & Compliance</h3>
+                        <p class="text-gray-700 leading-relaxed">Comprehensive cybersecurity systems and regulatory compliance protocols. Real-time monitoring, predictive maintenance, and adherence to international telecommunications standards.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Telecommunications infrastructure" class="rounded-2xl shadow-xl w-full h-auto">
+            </div>
+        </div>
+    </section>
+    <!-- Our Products & Equipment -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-[#004ba8] mb-12">Planned Telecom Products & Solutions</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=500&auto=format&fit=crop" alt="5G Towers" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white p-3 rounded-full">
+                            <i class="fas fa-wifi text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-wifi text-blue-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">5G Network Infrastructure</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Advanced 5G towers, base stations, and network equipment with automated controls and monitoring systems.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-signal text-blue-600 mr-2"></i>Coverage: 50-200 km radius</li>
+                            <li><i class="fas fa-satellite text-blue-600 mr-2"></i>GPS-guided deployment</li>
+                            <li><i class="fas fa-bolt text-blue-600 mr-2"></i>Energy efficiency optimization</li>
+                            <li><i class="fas fa-shield-alt text-blue-600 mr-2"></i>Security monitoring systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=500&auto=format&fit=crop" alt="Cranes" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-600 text-white p-3 rounded-full">
+                            <i class="fas fa-crane text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-crane text-green-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Tower Cranes & Lifting Equipment</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-capacity tower cranes and mobile lifting equipment with advanced safety systems and precision controls.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-weight-hanging text-green-600 mr-2"></i>Lifting capacity: 50-500 tons</li>
+                            <li><i class="fas fa-ruler-vertical text-green-600 mr-2"></i>Height: up to 300m</li>
+                            <li><i class="fas fa-shield-alt text-green-600 mr-2"></i>Automated safety systems</li>
+                            <li><i class="fas fa-wifi text-green-600 mr-2"></i>Remote monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500&auto=format&fit=crop" alt="Concrete Equipment" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-orange-600 text-white p-3 rounded-full">
+                            <i class="fas fa-industry text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-industry text-orange-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Concrete & Asphalt Equipment</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Advanced concrete mixers, pavers, and asphalt equipment with automated controls and quality monitoring.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-tachometer-alt text-orange-600 mr-2"></i>Capacity: 200-500 m³/h</li>
+                            <li><i class="fas fa-puzzle-piece text-orange-600 mr-2"></i>Modular design</li>
+                            <li><i class="fas fa-cloud-rain text-orange-600 mr-2"></i>Weather-resistant construction</li>
+                            <li><i class="fas fa-check-circle text-orange-600 mr-2"></i>Quality control systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581092446450-b3e2e5b6c6c4?q=80&w=500&auto=format&fit=crop" alt="Conveyor Systems" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-purple-600 text-white p-3 rounded-full">
+                            <i class="fas fa-conveyor-belt text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-conveyor-belt text-purple-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Material Handling Systems</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Conveyor systems, hoists, and automated material handling equipment for construction sites and industrial facilities.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-tachometer-alt text-purple-600 mr-2"></i>Capacity: 2000+ TPH</li>
+                            <li><i class="fas fa-puzzle-piece text-purple-600 mr-2"></i>Modular design</li>
+                            <li><i class="fas fa-cloud-rain text-purple-600 mr-2"></i>Weather-resistant construction</li>
+                            <li><i class="fas fa-check-circle text-purple-600 mr-2"></i>Integrated safety systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=500&auto=format&fit=crop" alt="Monitoring Systems" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-indigo-600 text-white p-3 rounded-full">
+                            <i class="fas fa-desktop text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-desktop text-indigo-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">BIM & Project Management</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Building Information Modeling and advanced project management systems for construction planning and execution.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-chart-line text-indigo-600 mr-2"></i>3D modeling & visualization</li>
+                            <li><i class="fas fa-shield-alt text-indigo-600 mr-2"></i>Cybersecurity</li>
+                            <li><i class="fas fa-server text-indigo-600 mr-2"></i>Cloud-based collaboration</li>
+                            <li><i class="fas fa-cogs text-indigo-600 mr-2"></i>Automated workflows</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01]" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500&auto=format&fit=crop" alt="Quality Control" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white p-3 rounded-full">
+                            <i class="fas fa-certificate text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-certificate text-red-600 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Quality Control Systems</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Advanced testing and quality assurance equipment for construction materials and structural integrity verification.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li><i class="fas fa-layer-group text-red-600 mr-2"></i>Multi-stage testing</li>
+                            <li><i class="fas fa-robot text-red-600 mr-2"></i>Automated quality control</li>
+                            <li><i class="fas fa-leaf text-red-600 mr-2"></i>Environmental compliance</li>
+                            <li><i class="fas fa-certificate text-red-600 mr-2"></i>International standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Workflow & Efficiency -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-[#004ba8] mb-12">Our Telecom Project Workflow</h2>
+        
+        <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+            <!-- Step 1 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-[#3e78b2] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
+                <h3 class="text-xl font-semibold mb-3">Site Assessment</h3>
+                                    <p class="text-gray-600">Comprehensive network planning, site surveys, and feasibility analysis for telecom infrastructure deployment.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 2 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-[#3e78b2] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
+                <h3 class="text-xl font-semibold mb-3">Engineering Design</h3>
+                                    <p class="text-gray-600">Custom engineering solutions for fiber networks, wireless infrastructure, and smart connectivity systems.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 3 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-[#3e78b2] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
+                <h3 class="text-xl font-semibold mb-3">Construction Execution</h3>
+                <p class="text-gray-600">Strategic construction and installation of infrastructure components with minimal disruption.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 4 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-[#3e78b2] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">4</div>
+                <h3 class="text-xl font-semibold mb-3">Quality Assurance</h3>
+                <p class="text-gray-600">Comprehensive testing, quality control, and safety verification for infrastructure integrity.</p>
+            </div>
+            
+            <div class="hidden lg:block w-12 h-0.5 bg-gray-300"></div>
+            
+            <!-- Step 5 -->
+            <div class="flex-1 text-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-16 h-16 bg-[#3e78b2] rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">5</div>
+                <h3 class="text-xl font-semibold mb-3">Ongoing Support</h3>
+                <p class="text-gray-600">24/7 monitoring, maintenance, and technical support for optimal infrastructure performance.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Impact Stats
+    <section class="py-20 px-6 bg-[#004ba8] text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Infrastructure Impact</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-blue-300 mb-2">1000+</div>
+                    <p class="text-lg">KM Roads Built</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-blue-300 mb-2">50</div>
+                    <p class="text-lg">Infrastructure Projects</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-blue-300 mb-2">99.8%</div>
+                    <p class="text-lg">Quality Standards</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-blue-300 mb-2">24/7</div>
+                    <p class="text-lg">Support Services</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Partnering with OEMs -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[#004ba8] mb-6" data-aos="fade-up">Built With the World's Best</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Ascender collaborates with global OEMs to supply world-class construction and infrastructure equipment for projects across Africa. Our partnerships ensure access to cutting-edge technology and comprehensive support.
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center" data-aos="fade-left">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">SIEMENS</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">GE</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">ABB</div>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-2xl font-bold text-gray-400">SCHNEIDER</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch CTA Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[#004ba8] mb-6" id="cta-title">Ready to Build Africa's Future?</h2>
+            <p class="text-xl text-gray-700 mb-8">
+                Partner with Ascender Technologies to transform your infrastructure with advanced construction technology, smart building solutions, and sustainable development practices.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-[#3e78b2] hover:bg-[#004ba8] text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+                    Contact Our Infrastructure Division
+                </button>
+                <div class="text-gray-600">
+                    <p>Email: telecom@ascender.tech</p>
+                    <p>Phone: +233 20 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#24272b] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="/assets/Logo.jpeg" alt="Ascender Technologies Logo" class="h-8 w-auto object-contain rounded-md">
+                        <span class="text-lg font-bold text-blue-600">ASCENDER <span class="text-white font-light">TECHNOLOGIES</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Leading West African EPC company specializing in sustainable solutions for mining, energy, and infrastructure development.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="mining.html" class="hover:text-white transition-colors">Mining & Minerals</a></li>
+                        <li><a href="energy.html" class="hover:text-white transition-colors">Energy & Power</a></li>
+                        <li><a href="infrastructure.html" class="hover:text-white transition-colors">Infrastructure</a></li>
+                        <li><a href="#automation" class="hover:text-white transition-colors">Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#leadership" class="hover:text-white transition-colors">Leadership</a></li>
+                        <li><a href="#careers" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#news" class="hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        © 2024 Ascender Technologies. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-custom-black mb-6">Login to Ascender Technologies</h2>
+                <button id="googleLoginBtn" class="w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-3">
+                    <i class="fab fa-google text-red-500"></i>
+                    <span>Continue with Google</span>
+                </button>
+                <button id="closeModal" class="mt-4 text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="mb-6">
+                    <i class="fas fa-sign-out-alt text-4xl text-ucla-blue mb-4"></i>
+                    <h2 class="text-2xl font-bold text-custom-black mb-2">Confirm Logout</h2>
+                    <p class="text-gray-600">Are you sure you want to logout from your account?</p>
+                </div>
+                <div class="flex space-x-4">
+                    <button id="confirmLogoutBtn" class="flex-1 bg-red-500 text-white py-3 px-4 rounded-lg hover:bg-red-600 transition-colors duration-200 font-semibold">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                    <button id="cancelLogoutBtn" class="flex-1 bg-gray-300 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-400 transition-colors duration-200 font-semibold">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed top-4 right-4 z-50 space-y-2"></div>
+
+    <script type="module" src="src/js/infrastructure.js"></script>
+</body>
+</html> 

@@ -13,6 +13,26 @@
       "destination": "/vision-mission.html"
     },
     {
+      "source": "/energy",
+      "destination": "/energy.html"
+    },
+    {
+      "source": "/marine",
+      "destination": "/marine.html"
+    },
+    {
+      "source": "/telecom",
+      "destination": "/telecom.html"
+    },
+    {
+      "source": "/infrastructure",
+      "destination": "/infrastructure.html"
+    },
+    {
+      "source": "/test",
+      "destination": "/test.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
